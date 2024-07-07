@@ -1,0 +1,18 @@
+use("Inv_Agaval")
+
+db.Inv_Productos.updateMany({}, {
+    $pull:{
+        tags:"book"
+    }
+})
+
+//Para remover varios elementos a la vez (de arreglos.)
+use("Inv_Agaval")
+
+db.Inv_Productos.updateMany({}, {
+    $pull:{
+        tags:{
+            $in: ["school", "appliance"]
+        }
+    }
+})

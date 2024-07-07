@@ -1,0 +1,30 @@
+//use("Inv_Agaval")
+//
+//db.iot.insertOne({
+//    sensor:"A001",
+//    date:"2022-01-03",
+//    readings:[1212]
+//})
+
+//Agregar info a un día ya existente. 
+
+//use("Inv_Agaval")
+
+db.iot.updateOne({
+    sensor:"A001",
+    date:"2022-01-03"
+}, {
+    $push: {
+        readings: 2323
+    }
+})
+
+// Para eliminar el ultimo registro. 
+//db.iot.updateOne({
+//    sensor:"A001",
+//    date:"2022-01-03"
+//}, {
+//    $pop: {
+//        readings: 1
+//    }
+//})

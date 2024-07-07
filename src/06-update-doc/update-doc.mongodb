@@ -1,0 +1,12 @@
+use("Inv_Agaval")
+
+db.Inv_Productos.update(
+    // Query
+    {_id: 102},
+    // Change => Operators 
+    {
+        $set:{
+            Marca:"Tiger"
+        }
+    }
+)

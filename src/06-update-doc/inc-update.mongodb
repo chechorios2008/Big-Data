@@ -1,0 +1,12 @@
+use("Inv_Agaval")
+
+db.Inv_Productos.update(
+    // Query
+    {_id: 101},
+    // Change => Operators 
+    {
+        $inc:{
+            Precio:250000
+        }
+    }
+)

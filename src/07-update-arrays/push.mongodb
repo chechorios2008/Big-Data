@@ -1,0 +1,7 @@
+use("Inv_Agaval")
+
+db.Inv_Productos.updateOne({_id:4}, {
+    $push:{
+        tags:"headphone"
+    }
+})

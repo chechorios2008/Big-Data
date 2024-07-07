@@ -1,0 +1,26 @@
+use("Inv_Agaval")
+
+db.Inv_Productos.drop()
+
+db.Inv_Productos.insertMany([
+    {
+       _id:1,
+       marca:"Adidas",
+       referencia:"Boston12",
+       inventario:100
+    },
+    {
+        _id:2,
+        marca:"Nike",
+        referencia:"Air Max",
+        inventario:89
+     },
+     {
+        _id:3,
+        marca:"Puma",
+        referencia:"Ferrari",
+        inventario:60
+     },
+])
+
+db.Inv_Productos.find()

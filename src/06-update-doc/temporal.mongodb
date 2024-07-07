@@ -1,0 +1,2 @@
+use("Inv_Agaval")
+db.Inv_Productos.find()

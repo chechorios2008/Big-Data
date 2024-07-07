@@ -1,0 +1,32 @@
+use('Inv_Agaval')
+
+db.Inv_Productos.insertOne({
+    _id:100,
+    sku:102149,
+    Marca:"Nike",
+    estado:"Linea",
+    Grupo:"Deportivo",
+    Linea:"Tenis",
+    Referencia:"Aix Max",
+    Precio:850000
+})
+db.Inv_Productos.insertOne({
+    _id:101,
+    sku:102201,
+    Marca:"Adidas",
+    estado:"Linea",
+    Grupo:"Deportivo",
+    Linea:"Tenis",
+    Referencia:"Boston12",
+    Precio:750000
+})
+db.Inv_Productos.insertOne({
+    _id:102,
+    sku:102202,
+    Marca:"Puma",
+    estado:"Linea",
+    Grupo:"Deportivo",
+    Linea:"Tenis",
+    Referencia:"Ferrari",
+    Precio:350000
+})

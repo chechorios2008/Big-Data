@@ -1,0 +1,12 @@
+use("Inv_Agaval")
+
+db.iot.update({
+    sensor:"A001",
+    date:"2022-01-04",
+},{
+    $push: {
+        readings: 2322
+    }
+}, {
+    upsert: true
+})
